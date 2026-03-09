@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Mwigora Group Of Schools</title>
+    <link rel="stylesheet" href="css/adminlogin.css">
+</head>
+<body>
+    <div class="header">
+        <h1 id="portal">Mwigora Group Of Schools</h1>
+        <hr>
+    </div>
+
+    <div class="login-page">
+        <div class="form">
+            <h3>Admin</h3>
+            <hr>
+            <form action="login.php" method="POST">
+                <input type="text" placeholder="Username" name="username" required />
+                <input type="password" placeholder="Password" name="password" required />
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <button id="back_button" onclick="location.href='index.html'">Back</button>
+</body>
+</html>

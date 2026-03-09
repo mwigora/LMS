@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book - Admin Portal</title>
+    <link rel="stylesheet" href="css/bookadding.css">
+</head>
+<body>
+    <!-- Back Button -->
+    <div>
+        <button class="BUTTON" id="log_button" onclick="location.href='admin_dashboard.php'">Back</button>
+    </div>
+
+    <!-- Header Section -->
+    <div class="main_header">
+        <div class="image_user">
+            <!-- Add Admin Profile Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 192 192">
+                <!-- SVG content for the profile -->
+            </svg>
+            <h4>Admin Profile</h4>
+        </div>
+        <div class="heading"></div>
+    </div>
+
+    <hr>
+
+    <h1 id="title">Add Book</h1>
+
+    <!-- Book Adding Form -->
+    <form id="book-form" action="add_book.php" method="post" enctype="multipart/form-data">
+        <p>Fill in the details of the book</p>
+
+        <!-- Book Code -->
+        <label for="book_code">Book Code</label>
+        <input id="book_code" type="number" name="book_code" placeholder="Enter Book Code" required>
+
+        <!-- Book Name -->
+        <label for="book_name">Book Name</label>
+        <input id="book_name" type="text" name="book_name" placeholder="Enter Book Name" required>
+
+        <!-- Author Name(s) -->
+        <label for="author1">Author Name</label>
+        <input id="author1" type="text" name="author" placeholder="Enter Author Name" required>
+
+        <!-- Subject -->
+        <label for="subject">Subject</label>
+        <input id="subject" type="text" name="subject" placeholder="Enter Subject" required>
+
+
+        <!-- Ebook Upload Button -->
+        <div class="upload-btn-wrapper">
+            <button class="btn">Upload Ebook</button>
+            <input type="file" name="myfile" />
+        </div>
+
+        <button id="submit" type="submit">Finish</button>
+    </form>
+</body>
+</html>

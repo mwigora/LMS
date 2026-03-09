@@ -1,0 +1,166 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #333;
+}
+
+hr {
+    margin-bottom: 30px;
+}
+
+/* Button Styles */
+.BUTTON {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.BUTTON:hover {
+    background-color: #0056b3;
+}
+
+/* Header Styles */
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2a2a;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.image_user {
+    display: flex;
+    align-items: center;
+}
+
+.image_user svg {
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 8px;
+    width: 75px;
+    height: 75px;
+}
+
+.image_user h4 {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.heading h1 {
+    font-size: 24px;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.upload-btn-wrapper {
+    margin-bottom: 20px;
+}
+
+.upload-btn-wrapper .btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.upload-btn-wrapper .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Submit Button */
+#submit {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main_header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image_user {
+        margin-bottom: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input, textarea, .btn, #submit {
+        font-size: 14px;
+    }
+}

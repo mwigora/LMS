@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Portal - Student</title>
+    <link rel="stylesheet" href="css/userportal.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header-file">
+        <div class="main_header">
+            <div class="image_user">
+                <h4>Student</h4>
+            </div>
+            <div class="heading">
+                <h1 id="portal">Library Portal</h1>
+            </div>
+        </div>
+        <div>
+            <form method="POST" action="logout.php">
+                <button class="BUTTON" id="log_button">Log Out</button>
+            </form>
+        </div>
+    </div>
+    <hr />
+
+    <!-- Main Content -->
+    <div id="blocks">
+        <!-- Tabs -->
+        <div class="tabs">
+            <form method="POST" action="userportal.php">
+                <button type="submit" name="tab" value="borrowed" class="tab-button">Borrowed Books</button>
+                <button type="submit" name="tab" value="overdue" class="tab-button">Overdue Books</button>
+                <button type="submit" name="tab" value="add" class="tab-button">Add Books</button>
+            </form>
+        </div>
+
+        <!-- Display Section -->
+        <div id="display-content">
+            <?php include 'userportal.php'; ?>
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div id="action-buttons">
+        <form method="POST" action="back_action.php" style="float: left;">
+            <button id="back-button">Back</button>
+        </form>
+        <form method="POST" action="confirm_action.php" style="float: right;">
+            <button id="confirm-button">Confirm</button>
+        </form>
+    </div>
+</body>
+</html>

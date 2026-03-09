@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/mainpage.css">
+    <title>Library Management System</title>
+  </head>
+  <body>
+    <h1 id="portal">Mwigora Group Of Schools</h1>
+    <hr>
+
+    <!-- Admin Login -->
+    <div class="main_user_block" id="admin">
+        <!-- User image -->
+        <img src="Images/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg"
+             alt="Admin Avatar"
+             class="user_logo"
+             onerror="this.src='https://via.placeholder.com/150';">
+        <br>
+        <!-- Button login -->
+        <form action="admin_login.php" method="post">
+            <button class="login_button" type="submit">Admin Login</button>
+        </form>
+    </div>
+
+    <!-- User Login -->
+    <div class="main_user_block" id="user">
+        <!-- User image -->
+        <img src="Images/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg"
+             alt="User Avatar"
+             class="user_logo"
+             onerror="this.src='https://via.placeholder.com/150';">
+        <br>
+        <!-- Button login -->
+        <form action="usr_login.php" method="post">
+            <button class="login_button" type="submit">User Login</button>
+        </form>
+    </div>
+  </body>
+</html>

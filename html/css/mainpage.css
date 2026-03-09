@@ -1,0 +1,58 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Portal title styling */
+#portal {
+    color: #333;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* Div container for login options */
+.main_user_block {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+/* User and admin logo styling */
+.user_logo {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+.login_button {
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login_button:hover {
+    background-color: #45a049;
+}
+
+/* Horizontal line for separation */
+hr {
+    border: 1px solid #ddd;
+    width: 80%;
+    margin: 20px auto;
+}
